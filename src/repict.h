@@ -10,7 +10,7 @@
 #include <stdbool.h>
 
 #ifndef M_PI
-#define M_PI 3.1415926535
+#define M_PI 3.14159265358979
 #endif
 
 #define KERNEL_MAX 100
@@ -32,7 +32,7 @@ kernel_t* kernel_working = NULL;				// kernel matrix
 
 static byte_t* image_buf_A = NULL;				// buffer A
 static byte_t* image_buf_B = NULL;				// buffer B
-static byte_t* image_buf_src = NULL;				// buffer copy of source
+static byte_t* image_buf_src = NULL;			// buffer copy of source
 
 static byte_t* image_dest = NULL;				// alias to target destination
 static byte_t* image_ready = NULL;				// alias to most current image
@@ -95,6 +95,7 @@ static void m_alloc_image(byte_t* dest, size_t w, size_t h, int bpp) {
 bool repict_set_source(byte_t* src, const size_t w, const size_t h, size_t c) {
 	
 
+	return true;
 }
 
 
